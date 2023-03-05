@@ -11,28 +11,28 @@ const promptUser = () =>
   inquirer.prompt([
     {
       type: 'input',
-      name: 'name',
-      message: 'What is your name?',
+      name: 'title',
+      message: 'What is your project name?',
     },
     {
       type: 'input',
-      name: 'location',
-      message: 'Where are you from?',
+      name: 'description1',
+      message: 'What was your motivation?',
     },
     {
       type: 'input',
-      name: 'hobby',
-      message: 'What is your favorite hobby?',
+      name: 'description2',
+      message: 'Why did you build this project?',
     },
     {
       type: 'input',
-      name: 'food',
-      message: 'What is your favorite food?',
+      name: 'description3',
+      message: 'What problem does it solve?',
     },
     {
       type: 'input',
-      name: 'github',
-      message: 'Enter your GitHub Username',
+      name: 'description4',
+      message: 'What did you learn?',
     },
     {
       type: 'input',
@@ -41,33 +41,9 @@ const promptUser = () =>
     },
   ]);
 
-// const generateHTML = (answers) =>
-// `<!DOCTYPE html>
-// <html lang="en">
-// <head>
-//   <meta charset="UTF-8">
-//   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-//   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-//   <title>Document</title>
-// </head>
-// <body>
-//   <div class="jumbotron jumbotron-fluid">
-//   <div class="container">
-//     <h1 class="display-4">Hi! My name is ${answers.name}</h1>
-//     <p class="lead">I am from ${answers.location}.</p>
-//     <h3>Example heading <span class="badge badge-secondary">Contact Me</span></h3>
-//     <ul class="list-group">
-//       <li class="list-group-item">My GitHub username is ${answers.github}</li>
-//       <li class="list-group-item">LinkedIn: ${answers.linkedin}</li>
-//     </ul>
-//   </div>
-// </div>
-// </body>
-// </html>`;
-
 promptUser()
   .then((answers) => writeFileAsync('professionalREADME.md', generateMarkdown(answers)))
-  .then(() => console.log('Successfully wrote to index.html'))
+  .then(() => console.log('Successfully wrote to professionalREADME.md'))
   .catch((err) => console.error(err));
 
 
