@@ -24,12 +24,12 @@ function generateMarkdown(data) {
 
   ## Installation
   
-  What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+  ${data.installation}.
   
 
   ## Usage
   
-  Provide instructions and examples for use. Include screenshots as needed.
+  ${data.usage}
   
   To add a screenshot, create an assets/images folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
   
@@ -39,8 +39,8 @@ function generateMarkdown(data) {
   
   ## License
   
-  The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-  
+  ${data.licence}  
+
 
   ## Credits
   
@@ -62,7 +62,9 @@ function generateMarkdown(data) {
   Go the extra mile and write tests for your application. Then provide examples on how to run them here.
 
   ## Questions
-  - For additional questions please reach me on ${data.email}.
+  For additional questions please reach me on 
+  - Email: ${data.email}.
+  - GitHub: ${data.gitHub}.
 
 `;
 }
