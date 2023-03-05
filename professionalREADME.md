@@ -1,6 +1,4 @@
-// function to generate markdown for README
-function generateMarkdown(data) {
-  return `# $
+# $
   # <Your-Project-Title>
 
   ## Description
@@ -60,8 +58,3 @@ function generateMarkdown(data) {
 
   ## Questions
 
-`;
-}
-
-
-module.exports = generateMarkdown;
