@@ -3,7 +3,6 @@ function generateMarkdown(data) {
   return `# ${data.title}
   # <Your-Project-Title>
 
-
   ## Description
   
   - ${data.description1};
@@ -31,11 +30,9 @@ function generateMarkdown(data) {
   
   ${data.usage}
   
-  To add a screenshot, create an assets/images folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+  For detailed step-by-step please relate to the video on the link below:
+  ${data.usageVideo}
   
-      md
-      ![alt text](assets/images/$)
-      
   
   ## License
   
@@ -45,21 +42,23 @@ function generateMarkdown(data) {
   ## Credits
   
   ### Collaborators
-  
-  ### Third-party
-  
+  ${data.credCollaborators}
+    
   ### Tutorials
-  
+  ${data.credTutorials}
   
   ---
   
   🏆 
   
   ## Contributing
+  ${data.contributing}
+
 
   ## Tests
   
-  Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+  ${data.test}
+
 
   ## Questions
   For additional questions please reach me on 

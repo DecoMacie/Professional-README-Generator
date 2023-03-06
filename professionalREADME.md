@@ -1,13 +1,12 @@
-# 
+# Household Budget Planner
   # <Your-Project-Title>
-
 
   ## Description
   
-  - ;
-  - ;
-  - ;
-  - .
+  - The increasing cost of living suggests better income management;
+  - This planner will hopefully help the common householder on their monthly income management;
+  - The application offers to the user a better visibility on their monthly income and expenses;
+  - During the development of this project I realised that in most cases better Budget management is all it takes to get through these hard times.
   
 
   ## Table of Contents (Optional)
@@ -22,43 +21,45 @@
 
   ## Installation
   
-  .
+  npm i.
   
 
   ## Usage
   
+  Add your income amount and each expense with discription and expense cathegory
   
+  For detailed step-by-step please relate to the video on the link below:
+  https://drive.google.com/file/d/1m-DFcTT6J5CJ434VibrYRqq-U0hgRErF/view
   
-  To add a screenshot, create an assets/images folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-  
-      md
-      ![alt text](assets/images/$)
-      
   
   ## License
   
-  D  
+  MIT  
 
 
   ## Credits
   
   ### Collaborators
-  
-  ### Third-party
-  
+  WillSmith, AnthonyHopkins, JoaquinPhoenix, RamiMalek
+    
   ### Tutorials
-  
+  N/A
   
   ---
   
   🏆 
   
   ## Contributing
+  Guidelines.txt
+
 
   ## Tests
   
-  Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+  test.test
+
 
   ## Questions
-  - For additional questions please reach me on undefined.
+  For additional questions please reach me on 
+  - Email: deco@macie.com.
+  - GitHub: DecoMacie.
 
