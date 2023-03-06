@@ -45,10 +45,36 @@ const promptUser = () =>
         message: 'Provide instructions and examples for use.',
       },
       {
+        type: 'input',
+        name: 'usageVideo',
+        message: 'Add video link.',
+      },
+      {
         type: 'list',
         name: 'licence',
         message: 'Choose a license for your application .',
-        choices: [new inquirer.Separator(),"Apache Licence 2.0","GNU General Public Licence 3.0","MIT","Boost Software Licence 1.0","Mozilla Public Licence 2.0","The Unlicence"],
+        choices: [new inquirer.Separator(),"Apache Licence 2.0", "GNU General Public Licence 3.0", "MIT","Boost Software Licence 1.0","Mozilla Public Licence 2.0","The Unlicence"],
+        // choices: choicesLicence,
+        },
+      {
+        type: 'input',
+        name: 'credCollaborators',
+        message: 'List your collaborators, if any (GitHub profile links).',
+      },
+      {
+        type: 'input',
+        name: 'credTutorials',
+        message: 'Mention tutorials (include links).',
+      },
+      {
+        type: 'input',
+        name: 'contributing',
+        message: 'Add contribution guidelines.',
+      },
+      {
+        type: 'input',
+        name: 'test',
+        message: 'Add test instructions.',
       },
       {
         type: 'input',
@@ -58,7 +84,7 @@ const promptUser = () =>
       {
         type: 'input',
         name: 'email',
-        message: 'Enter your LinkedIn URL.',
+        message: 'Enter your email address.',
       },
         
 
@@ -70,31 +96,3 @@ promptUser()
     writeFileAsync('professionalREADME.md', generateMarkdown(answers)))
   .then(() => console.log('Successfully wrote to professionalREADME.md'))
   .catch((err) => console.error(err));
-
-
-
-// const writeFileAsync = util.promisify(fs.writeFile);
-
-
-// // array of questions for user
-// const questions = [
-//     '1. Document title', 
-
-// ];
-
-// // function to write README file
-// function writeToFile(fileName, data) {
-// }
-
-// // function to initialize program
-// function init() {
-
-// }
-
-// // function call to initialize program
-// init();
-
-// const x = generateMarkdown() 
-// writeToFile()
-//     .then((data) => writeFileAsync('readme1.md', generateMarkdown(data)))
-
